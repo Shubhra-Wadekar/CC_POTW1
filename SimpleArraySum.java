@@ -17,7 +17,11 @@ class Result {
 
     public static int simpleArraySum(List<Integer> ar) {
     // Write your code here
-
+    int count=0;
+    for(int i=0;i<ar.size();i++){
+        count+=ar.get(i);
+    }
+    return count;
     }
 
 }
@@ -47,4 +51,3 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
