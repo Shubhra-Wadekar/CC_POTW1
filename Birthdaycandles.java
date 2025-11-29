@@ -17,7 +17,20 @@ class Result {
 
     public static int birthdayCakeCandles(List<Integer> candles) {
     // Write your code here
-
+    int max=candles.get(0);
+            for(int i=1;i<candles.size();i++){
+                if(candles.get(i)>max){
+                    max=candles.get(i);
+                }
+            }
+            int counter=0;
+            for(int i=0;i<candles.size();i++){
+                if(candles.get(i)==max){
+                    counter++;
+                }
+            }
+            
+            return counter;
     }
 
 }
@@ -47,4 +60,3 @@ public class Solution {
         bufferedWriter.close();
     }
 }
-
